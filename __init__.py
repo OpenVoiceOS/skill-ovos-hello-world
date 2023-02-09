@@ -1,5 +1,7 @@
 from adapt.intent import IntentBuilder
 from mycroft import MycroftSkill, intent_handler
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_utils import classproperty
 
 
 class HelloWorldSkill(MycroftSkill):
@@ -10,6 +12,18 @@ class HelloWorldSkill(MycroftSkill):
         """
         super().__init__()
         self.learning = True
+
+    @classproperty
+    def runtime_requirements(self):
+        return RuntimeRequirements(internet_before_load=False,
+                                   network_before_load=False,
+                                   gui_before_load=False,
+                                   requires_internet=False,
+                                   requires_network=False,
+                                   requires_gui=False,
+                                   no_internet_fallback=True,
+                                   no_network_fallback=True,
+                                   no_gui_fallback=True)
 
     def initialize(self):
         """ Perform any final setup needed for the skill here.
