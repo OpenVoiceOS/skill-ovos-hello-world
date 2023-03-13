@@ -1,0 +1,8 @@
+recursive-include dialog *
+recursive-include vocab *
+recursive-include locale *
+recursive-include res *
+recursive-include ui *
+recursive-include skill *
+include *.json
+include *.txt
