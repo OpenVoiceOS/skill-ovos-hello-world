@@ -1,16 +1,15 @@
-from adapt.intent import IntentBuilder
-from mycroft import MycroftSkill, intent_handler
-from ovos_utils.process_utils import RuntimeRequirements
 from ovos_utils import classproperty
+from ovos_utils.intents import IntentBuilder
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.decorators import intent_handler
+from ovos_workshop.skills import OVOSSkill
 
 
-class HelloWorldSkill(MycroftSkill):
-    def __init__(self):
+class HelloWorldSkill(OVOSSkill):
+    def __init__(self, *args, **kwargs):
         """ The __init__ method is called when the Skill is first constructed.
-        It is often used to declare variables or perform setup actions, however
-        it cannot utilise MycroftSkill methods as the class does not yet exist.
         """
-        super().__init__()
+        super().__init__(*args, **kwargs)
         self.learning = True
 
     @classproperty
@@ -25,12 +24,11 @@ class HelloWorldSkill(MycroftSkill):
                                    no_network_fallback=True,
                                    no_gui_fallback=True)
 
-    def initialize(self):
-        """ Perform any final setup needed for the skill here.
-        This function is invoked after the skill is fully constructed and
-        registered with the system. Intents will be registered and Skill
-        settings will be available."""
-        my_setting = self.settings.get('my_setting')
+    @property
+    def get_my_setting(self):
+        """Dynamically get the my_setting from the skill settings file.
+        If it doesn't exist, return the default value."""
+        return self.settings.get('my_setting', 'default_value')
 
     @intent_handler(IntentBuilder('ThankYouIntent').require('ThankYouKeyword'))
     def handle_thank_you_intent(self, message):
