@@ -1,2 +1,0 @@
-ovos-utils~=0.0, >=0.0.28
-ovos_workshop~=0.0, >=0.0.11
