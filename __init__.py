@@ -61,9 +61,13 @@ class HelloWorldSkill(OVOSSkill):
         """Optional action to take when "stop" is requested by the user.
         This method should return True if it stopped something or
         False (or None) otherwise.
+        If not relevant to your skill, feel free to remove.
         """
         pass
 
 
 def create_skill():
+    """Optional for OVOSSkill, required for MycroftSkill.
+    Left for backwards compatibility reasons but it can be safely removed.
+    """
     return HelloWorldSkill()
