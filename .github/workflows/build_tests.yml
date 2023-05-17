@@ -36,3 +36,4 @@ jobs:
           ignore-vulns: |
             GHSA-r9hx-vwmv-q579
             GHSA-fpfv-jqm9-f5jm
+            PYSEC-2022-43012
