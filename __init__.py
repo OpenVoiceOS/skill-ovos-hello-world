@@ -64,10 +64,3 @@ class HelloWorldSkill(OVOSSkill):
         If not relevant to your skill, feel free to remove.
         """
         pass
-
-
-def create_skill():
-    """Optional for OVOSSkill, required for MycroftSkill.
-    Left for backwards compatibility reasons but it can be safely removed.
-    """
-    return HelloWorldSkill()
