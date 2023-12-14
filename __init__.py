@@ -48,6 +48,12 @@ class HelloWorldSkill(OVOSSkill):
         self.settings.merge(DEFAULT_SETTINGS, new_only=True)
         # set a callback to be called when settings are changed
         self.settings_change_callback = self.on_settings_changed
+        # (custom) event handler setup example
+        # below is a custom event, system event specs found at
+        # https://github.com/OpenVoiceOS/message_spec/tree/master/docs
+        # this can be tested using `mana` (https://github.com/NeonGeckoCom/neon-mana-utils)
+        # `mana send-message hello.world`
+        self.add_event("hello.world", self.handle_hello_world_intent)
         self.my_var = "hello world"
 
     def on_settings_changed(self):
