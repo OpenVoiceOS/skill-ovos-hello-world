@@ -50,7 +50,7 @@ class HelloWorldSkill(OVOSSkill):
         self.settings_change_callback = self.on_settings_changed
         # (custom) event handler setup example
         # below is a custom event, system event specs found at
-        # https://github.com/OpenVoiceOS/message_spec/tree/master/docs
+        # https://openvoiceos.github.io/message_spec/
         # this can be tested using `mana` (https://github.com/NeonGeckoCom/neon-mana-utils)
         # `mana send-message hello.world`
         self.add_event("hello.world", self.handle_hello_world_intent)
