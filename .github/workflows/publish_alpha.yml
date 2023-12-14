@@ -6,28 +6,60 @@ on:
     branches:
       - dev
     paths-ignore:
-      - 'skill_naptime/version.py'
-      - 'test/**'
-      - 'examples/**'
+      - 'version.py'
       - '.github/**'
       - '.gitignore'
       - 'LICENSE'
       - 'CHANGELOG.md'
       - 'MANIFEST.in'
-      - 'readme.md'
+      - 'README.md'
       - 'scripts/**'
   workflow_dispatch:
 
 jobs:
-  build_and_publish:
+  autotranslate:
     runs-on: ubuntu-latest
+    env:
+      API_KEY: ${{secrets.DL_API_KEY}} 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          ref: dev
+          fetch-depth: 0
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            locales:
+              - 'locale/en-us/**'
+              - 'dialog/en-us/**'
+              - 'vocab/en-us/**'
+      - name: Setup Python
+        if: steps.filter.outputs.locales == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Auto Translate
+        if: steps.filter.outputs.locales == 'true'
+        run: |
+          python -m pip install ovos-translate-plugin-deepl ovos-utils
+          python scripts/translate.py
+      - name: Commit to dev
+        if: steps.filter.outputs.locales == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: autotranslate
+          branch: dev
+    
+  build_and_publish:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3
         with:
           ref: dev
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8
       - name: Install Build Tools
@@ -45,7 +77,7 @@ jobs:
       - name: Commit to dev
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Prepare alpha version package
+          commit_message: Increment Version
           branch: dev
       - name: version
         run: echo "::set-output name=version::$(python setup.py --version)"
@@ -63,10 +95,11 @@ jobs:
             ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: true
+          commitish: dev
       - name: Build Distribution Packages
         run: |
           python setup.py bdist_wheel
       - name: Publish to Test PyPI
-        uses: pypa/gh-action-pypi-publish@master
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{secrets.PYPI_TOKEN}}
