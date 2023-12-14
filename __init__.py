@@ -56,7 +56,7 @@ class HelloWorldSkill(OVOSSkill):
 
     @property
     def log_level(self):
-        """Dynamically get the my_setting from the skill settings file.
+        """Dynamically get the 'log_level' value from the skill settings file.
         If it doesn't exist, return the default value.
         This will reflect live changes to settings.json files (local or from backend)
         """
