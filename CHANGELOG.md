@@ -2,7 +2,19 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a3...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a4...HEAD)
+
+**Implemented enhancements:**
+
+- Rev/skillcode [\#14](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/14) ([emphasize](https://github.com/emphasize))
+
+**Closed issues:**
+
+- Add skill default setting initialization example [\#11](https://github.com/OpenVoiceOS/skill-ovos-hello-world/issues/11)
+
+## [V0.0.4a4](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/V0.0.4a4) (2023-12-14)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a3...V0.0.4a4)
 
 **Fixed bugs:**
 
