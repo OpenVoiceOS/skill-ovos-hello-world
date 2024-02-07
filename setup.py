@@ -5,7 +5,7 @@ from os import walk, path
 
 URL = "https://https://github.com/AEuhus/skill-ovos-our-skill-test"
 SKILL_CLAZZ = "AlexIsFatTest"  # needs to match __init__.py class name
-PYPI_NAME = "skill-ovos-our-skill-test"  # pip install PYPI_NAME
+PYPI_NAME = "skill-ovos-our-skill-test-alex-is-fat"  # pip install PYPI_NAME
 
 # below derived from github url to ensure standard skill_id
 SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")
