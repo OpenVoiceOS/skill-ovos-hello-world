@@ -82,6 +82,11 @@ class AlexIsFatTest(OVOSSkill):
     def handle_thank_you_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("fav.music")
+
+    @intent_handler(IntentBuilder("ThanksForTalkingIntent").require("ThanksForTalking"))
+    def handle_thank_you_intent(self, message):
+        """This is an Adapt intent handler, it is triggered by a keyword."""
+        self.speak_dialog("thanks.for.talking")
     
     @intent_handler(IntentBuilder("AlexIsFatIntent").require("IsAlexFat"))
     def handle_thank_you_intent(self, message):
