@@ -73,71 +73,6 @@ class AlexIsFatTest(OVOSSkill):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
     
-    @intent_handler(IntentBuilder("TortoiseHareIntent").require("TortoiseHare"))
-    def handle_tortoise_hare_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("tortoise.hare")
-    
-    @intent_handler(IntentBuilder("FavMusicIntent").require("FavMusic"))
-    def handle_fav_music_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("fav.music")
-
-    @intent_handler(IntentBuilder("InventHolidayIntent").require("InventHoliday"))
-    def handle_invent_holiday_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("invent.holiday")
-
-    @intent_handler(IntentBuilder("FavFoodIntent").require("FavFood"))
-    def handle_fav_food_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("fav.food")
-
-    @intent_handler(IntentBuilder("NFLTeamsIntent").require("NFLTeams"))
-    def handle_nfl_teams_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("nfl.teams")
-
-    @intent_handler(IntentBuilder("ThanksForTalkingIntent").require("ThanksForTalking"))
-    def handle_thanks_for_talking_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("thanks.for.talking")
-
-    @intent_handler(IntentBuilder("WhatMadeLaughIntent").require("WhatMadeLaugh"))
-    def handle_waht_made_laugh_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("what.made.laugh")
-    
-    @intent_handler(IntentBuilder("HowIsDayIntent").require("HowIsDay"))
-    def handle_how_is_day_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("how.is.day")
-    
-    @intent_handler(IntentBuilder("AlexIsFatIntent").require("IsAlexFat"))
-    def handle_alex_is_fat_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("alex.is.fat")
-
-    @intent_handler(IntentBuilder("WhatMadeSadIntent").require("WhatMadeSad"))
-    def handle_what_made_sad_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("what.made.sad")
- 
-    @intent_handler(IntentBuilder("PrincessPeaIntent").require("PrincessPea"))
-    def handle_princess_pea_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("princess.pea")
-
-    @intent_handler(IntentBuilder("FavSubnautCreatureIntent").require("FavSubnautCreature"))
-    def handle_fav_subnaut_creature_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("fav.subnaut.creature")
-
-    @intent_handler(IntentBuilder("ChatGPTThoughtsIntent").require("ChatGPTThoughts"))
-    def handle_chat_gpt_thoughts_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
-        self.speak_dialog("chat.gpt.thoughts")
-    
     @intent_handler("HowAreYou.intent")
     def handle_how_are_you_intent(self, message):
         """This is a Padatious intent handler.
@@ -161,18 +96,146 @@ class AlexIsFatTest(OVOSSkill):
                         ("'log_level' setting to 'DEBUG' in the core ")
                         ("configuration (mycroft.conf)"))
 
-    @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
-    def handle_hello_world_intent(self, message):
-        """
-        speak_dialog() is an OVOS skill method that safely handles
-        formatting and speaking a dialog file and its translated dialog
-        back to the user.
-        """
-        # wait=True will block the message bus until the dialog is finished
-        self.speak_dialog("hello.world", wait=True)
-        # this will speak the string without translation
-        self.speak("hello english folks")
+    @intent_handler("AlexIsFat.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("alex.is.fat")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+   
+    @intent_handler("ChatGPTThoughts.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("chat.gpt.thoughts")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
 
+    @intent_handler("FavFood.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("fav.food")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("FavMusic.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("fav.music")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("FavSubnautCreature.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("fav.subnaut.creature")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("HelloWorld.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("hello.world")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+    
+    @intent_handler("HowIsDay.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("how.is.day")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("InventHoliday.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("invent.holiday")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("NFLTeams.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("nfl.teams")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("PrincessPea.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("princess.pea")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("ThanksForTalking.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("thanks.for.talking")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("TortoiseHare.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("tortoise.hare")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("WhatMadeLaugh.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("what.made.laugh")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+
+    @intent_handler("WhatMadeSad.intent")
+    def handle_how_are_you_intent(self, message):
+        self.speak_dialog("what.made.sad")
+        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
+                 ("error, and exception."))
+        if self.log_level == "WARNING":
+            LOG.warning(("To be able to see debug logs, you need to change the")
+                        ("'log_level' setting to 'DEBUG' in the core ")
+                        ("configuration (mycroft.conf)"))
+    
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
         This method should return True if it stopped something or
