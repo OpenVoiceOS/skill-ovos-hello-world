@@ -22,7 +22,5 @@ OpenVoiceOS (@OpenVoiceOS)
 
 ## Tags
 
-#helloworld
-#first-skill
-#hello
-#greeting
+#AIAssistant
+#FirstSkill
