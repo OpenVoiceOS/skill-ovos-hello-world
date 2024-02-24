@@ -1,7 +1,7 @@
 {
-    "authorname": "OpenVoiceOS",
-    "foldername": "skill-ovos-date-time",
-    "url": "https://github.com/OpenVoiceOS/skill-ovos-date-time",
+    "authorname": "AEuhus",
+    "foldername": "skill-ovos-our-skill-test",
+    "url": "https://github.com/AEuhus/skill-ovos-our-skill-test",
     "branch": "dev",
     "license": "apache-2.0",
     "tags": [
@@ -14,14 +14,14 @@
         "world-time",
         "permissive-license"
     ],
-    "short_description": "Get the time, date, day of the week",
-    "last_updated": "2022-10-11T16:36:06Z",
+    "short_description": "Skill for 2024 OCSEF fair",
+    "last_updated": "2024-02-23T20:02:06Z",
     "icon": "https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/calendar.svg",
-    "skillname": "Date and Time",
-    "description": "Get the local time or time for major cities around the world.  Times\nare given in 12-hour (2:30 pm) or 24-hour format (14:30) based on the\nTime Format setting at [Home](https://home.mycroft.ai/#/setting/basic)\n\nTime can optionally be shown on a display, like a digital clock.  See\nthe [Skill Setting](https://home.mycroft.ai/#/skill).",
+    "skillname": "OVOS our skill",
+    "description": "yap yap",
     "examples": [],
     "credits": [
-        "Mycroft AI (@MycroftAI)"
+        "Mycroft AI (@MycroftAI), AEuhus (@AEuhus)"
     ],
     "category": "Daily",
     "categories": [
