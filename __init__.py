@@ -74,67 +74,67 @@ class AlexIsFatTest(OVOSSkill):
         self.speak_dialog("welcome")
     
     @intent_handler(IntentBuilder("TortoiseHareIntent").require("TortoiseHare"))
-    def handle_thank_you_intent(self, message):
+    def handle_tortoise_hare_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("tortoise.hare")
     
     @intent_handler(IntentBuilder("FavMusicIntent").require("FavMusic"))
-    def handle_thank_you_intent(self, message):
+    def handle_fav_music_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("fav.music")
 
     @intent_handler(IntentBuilder("InventHolidayIntent").require("InventHoliday"))
-    def handle_thank_you_intent(self, message):
+    def handle_invent_holiday_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("invent.holiday")
 
     @intent_handler(IntentBuilder("FavFoodIntent").require("FavFood"))
-    def handle_thank_you_intent(self, message):
+    def handle_fav_food_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("fav.food")
 
     @intent_handler(IntentBuilder("NFLTeamsIntent").require("NFLTeams"))
-    def handle_thank_you_intent(self, message):
+    def handle_nfl_teams_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("nfl.teams")
 
     @intent_handler(IntentBuilder("ThanksForTalkingIntent").require("ThanksForTalking"))
-    def handle_thank_you_intent(self, message):
+    def handle_thanks_for_talking_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("thanks.for.talking")
 
     @intent_handler(IntentBuilder("WhatMadeLaughIntent").require("WhatMadeLaugh"))
-    def handle_thank_you_intent(self, message):
+    def handle_waht_made_laugh_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("what.made.laugh")
     
     @intent_handler(IntentBuilder("HowIsDayIntent").require("HowIsDay"))
-    def handle_thank_you_intent(self, message):
+    def handle_how_is_day_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("how.is.day")
     
     @intent_handler(IntentBuilder("AlexIsFatIntent").require("IsAlexFat"))
-    def handle_thank_you_intent(self, message):
+    def handle_alex_is_fat_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("alex.is.fat")
 
     @intent_handler(IntentBuilder("WhatMadeSadIntent").require("WhatMadeSad"))
-    def handle_thank_you_intent(self, message):
+    def handle_what_made_sad_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("what.made.sad")
  
     @intent_handler(IntentBuilder("PrincessPeaIntent").require("PrincessPea"))
-    def handle_thank_you_intent(self, message):
+    def handle_princess_pea_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("princess.pea")
 
     @intent_handler(IntentBuilder("FavSubnautCreatureIntent").require("FavSubnautCreature"))
-    def handle_thank_you_intent(self, message):
+    def handle_fav_subnaut_creature_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("fav.subnaut.creature")
 
     @intent_handler(IntentBuilder("ChatGPTThoughtsIntent").require("ChatGPTThoughts"))
-    def handle_thank_you_intent(self, message):
+    def handle_chat_gpt_thoughts_intent(self, message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("chat.gpt.thoughts")
     
