@@ -1,3 +1,4 @@
+from ovos_bus_client.message import Message
 from ovos_utils import classproperty
 from ovos_utils.intents import IntentBuilder
 from ovos_utils.process_utils import RuntimeRequirements
@@ -40,21 +41,24 @@ class HelloWorldSkill(OVOSSkill):
         return self.settings.get("my_setting", "default_value")
 
     @intent_handler(IntentBuilder("ThankYouIntent").require("ThankYouKeyword"))
-    def handle_thank_you_intent(self, message):
+    def handle_thank_you_intent(self, message: Message):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
 
     @intent_handler("HowAreYou.intent")
-    def handle_how_are_you_intent(self, message):
+    def handle_how_are_you_intent(self, message: Message):
         """This is a Padatious intent handler.
         It is triggered using a list of sample phrases."""
         self.speak_dialog("how.are.you")
 
     @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
-    def handle_hello_world_intent(self, message):
+    def handle_hello_world_intent(self, message: Message):
         """Skills can log useful information. These will appear in the CLI and
         the skills.log file."""
-        self.log.info("There are five types of log messages: " "info, debug, warning, error, and exception.")
+        self.log.info(
+            "There are five types of log messages: "
+            "info, debug, warning, error, and exception."
+        )
         self.speak_dialog("hello.world")
 
     def stop(self):
