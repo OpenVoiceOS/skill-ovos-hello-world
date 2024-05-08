@@ -1,0 +1,34 @@
+{
+    "skill_id": "skill-ovos-hello-world.OpenVoiceOS",
+    "source": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+    "package_name": "skill-ovos-hello-world",
+    "pip_spec": "git+https://github.com/OpenVoiceOS/skill-ovos-hello-world@dev",
+    "license": "Apache-2.0",
+    "author": "OpenVoiceOS",
+    "extra_plugins": {
+        "core": ["ovos-utterance-transformer-XXX"],
+        "PHAL": ["ovos-PHAL-XXX"],
+        "listener": ["ovos-audio-transformer-XXX", "ovos-ww-plugin-XXX", "ovos-vad-plugin-XXX", "ovos-stt-plugin-XXX"],
+        "audio": ["ovos-dialog-transformer-XXX","ovos-tts-transformer-XXX", "ovos-tts-plugin-XXX"],
+        "media": ["ovos-ocp-XXX", "ovos-media-XXX"],
+        "gui": ["ovos-gui-extension-XXX"]
+    },
+    "icon": "https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/smile.svg",
+    "images": [
+        "http://example_logo.png",
+        "http://example_screenshot.png"
+    ],
+    "name": "Hello World",
+    "description": "This is a basic Hello Word Skill that takes an Utterance from the user and provides a voice response - a Dialog. This Skill demonstrates the basic directory and file structure of an OVOS Skill, and is a good first Skill to study if you are interested in developing Skills for the OVOS ecosystem.",
+    "examples": [
+        "Hello world",
+        "How are you?",
+        "Thank you"
+    ],
+    "tags": [
+        "helloworld",
+        "first-skill",
+        "greeting",
+        "hello"
+    ]
+}
