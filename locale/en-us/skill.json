@@ -14,10 +14,6 @@
         "gui": ["ovos-gui-extension-XXX"]
     },
     "icon": "https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/smile.svg",
-    "images": [
-        "http://example_logo.png",
-        "http://example_screenshot.png"
-    ],
     "name": "Hello World",
     "description": "This is a basic Hello Word Skill that takes an Utterance from the user and provides a voice response - a Dialog. This Skill demonstrates the basic directory and file structure of an OVOS Skill, and is a good first Skill to study if you are interested in developing Skills for the OVOS ecosystem.",
     "examples": [
