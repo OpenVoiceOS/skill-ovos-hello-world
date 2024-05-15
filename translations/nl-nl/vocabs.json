@@ -1,0 +1,10 @@
+{
+    "/vocab/HelloWorldKeyword.voc": [
+        "hallo wereld",
+        "groeten"
+    ],
+    "/vocab/ThankYouKeyword.voc": [
+        "dank je",
+        "bedankt"
+    ]
+}

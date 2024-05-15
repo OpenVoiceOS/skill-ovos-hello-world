@@ -1,0 +1,8 @@
+{
+    "/intent/HowAreYou.intent": [
+        "comment a \u00e9t\u00e9 ta journ\u00e9e",
+        "comment se (passe|d\u00e9roule) ta journ\u00e9e",
+        "comment (\u00e7a va|vas-tu)",
+        "est-ce que \u00e7a va"
+    ]
+}

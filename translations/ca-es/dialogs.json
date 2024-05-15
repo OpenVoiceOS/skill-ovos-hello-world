@@ -1,0 +1,23 @@
+{
+    "/dialog/hello.world.dialog": [
+        "Hola m\u00f3n",
+        "Hola",
+        "Hola a tu tamb\u00e9"
+    ],
+    "/dialog/how.are.you.dialog": [
+        "Anem b\u00e9",
+        "For\u00e7a b\u00e9",
+        "No pas malament",
+        "Estic molt b\u00e9",
+        "Podria ser millor",
+        "Estic molt b\u00e9"
+    ],
+    "/dialog/welcome.dialog": [
+        "En qualsevol moment.",
+        "M'alegra ser \u00fatil.",
+        "M'alegra ajudar.",
+        "El plaer \u00e9s meu.",
+        "Cap problema.",
+        "De res."
+    ]
+}

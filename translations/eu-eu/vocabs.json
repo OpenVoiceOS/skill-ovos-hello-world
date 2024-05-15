@@ -1,0 +1,12 @@
+{
+    "/vocab/HelloWorldKeyword.voc": [
+        "kaixo mundua",
+        "kaixo mycroft"
+    ],
+    "/vocab/ThankYouKeyword.voc": [
+        "Eskerrik asko",
+        "Milesker",
+        "Mila esker",
+        "Esker mila"
+    ]
+}

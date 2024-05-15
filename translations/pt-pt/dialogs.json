@@ -1,0 +1,23 @@
+{
+    "/dialog/hello.world.dialog": [
+        "Ol\u00e1",
+        "Oi tamb\u00e9m para voc\u00ea",
+        "Ol\u00e1, mundo"
+    ],
+    "/dialog/how.are.you.dialog": [
+        "Nada mal",
+        "Muito bem",
+        "Pode ser melhor",
+        "Estou bem",
+        "Estou a fazer excelente",
+        "Estou muito bem"
+    ],
+    "/dialog/welcome.dialog": [
+        "N\u00e3o h\u00e1 problema",
+        "De nada",
+        "O meu prazer",
+        "Fico feliz por ajudar",
+        "A qualquer momento",
+        "Fico feliz por ser \u00fatil"
+    ]
+}

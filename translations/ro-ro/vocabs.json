@@ -1,0 +1,10 @@
+{
+    "/vocab/HelloWorldKeyword.voc": [
+        "Salut Lume",
+        "Salutari"
+    ],
+    "/vocab/ThankYouKeyword.voc": [
+        "mul\u021bumesc",
+        "Mul\u021bumiri"
+    ]
+}

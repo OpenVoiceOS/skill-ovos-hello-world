@@ -1,0 +1,10 @@
+{
+    "/vocab/HelloWorldKeyword.voc": [
+        "selam d\u00fcnya",
+        "selamlar"
+    ],
+    "/vocab/ThankYouKeyword.voc": [
+        "te\u015fkk\u00fcr ederim",
+        "te\u015fekk\u00fcrler"
+    ]
+}
