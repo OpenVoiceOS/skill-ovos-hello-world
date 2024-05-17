@@ -1,23 +1,23 @@
 {
-    "/dialog/hello.world.dialog": [
-        "Ol\u00e1",
-        "Oi tamb\u00e9m para voc\u00ea",
-        "Ol\u00e1, mundo"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "Nada mal",
-        "Muito bem",
-        "Pode ser melhor",
-        "Estou bem",
-        "Estou a fazer excelente",
-        "Estou muito bem"
-    ],
-    "/dialog/welcome.dialog": [
-        "N\u00e3o h\u00e1 problema",
-        "De nada",
-        "O meu prazer",
-        "Fico feliz por ajudar",
-        "A qualquer momento",
-        "Fico feliz por ser \u00fatil"
-    ]
+  "/dialog/hello.world.dialog": [
+    "Olá mundo",
+    "Olá",
+    "Olá para ti também"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "Ando bem",
+    "Muito bem",
+    "Nada mal",
+    "Ando excelente",
+    "Podia andar melhor",
+    "Estou muito bem"
+  ],
+  "/dialog/welcome.dialog": [
+    "sempre ás ordens ",
+    "Fico feliz por ser útil",
+    "Fico feliz por ajudar",
+    "O prazer é meu",
+    "Sem problema",
+    "De nada"
+  ]
 }
