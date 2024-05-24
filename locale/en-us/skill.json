@@ -6,12 +6,12 @@
     "license": "Apache-2.0",
     "author": "OpenVoiceOS",
     "extra_plugins": {
-        "core": ["ovos-utterance-transformer-XXX"],
-        "PHAL": ["ovos-PHAL-XXX"],
-        "listener": ["ovos-audio-transformer-XXX", "ovos-ww-plugin-XXX", "ovos-vad-plugin-XXX", "ovos-stt-plugin-XXX"],
-        "audio": ["ovos-dialog-transformer-XXX","ovos-tts-transformer-XXX", "ovos-tts-plugin-XXX"],
-        "media": ["ovos-ocp-XXX", "ovos-media-XXX"],
-        "gui": ["ovos-gui-extension-XXX"]
+        "core": [],
+        "PHAL": [],
+        "listener": [],
+        "audio": [],
+        "media": [],
+        "gui": []
     },
     "icon": "https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/smile.svg",
     "name": "Hello World",
