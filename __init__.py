@@ -79,8 +79,7 @@ class HelloWorldSkill(OVOSSkill):
         It is triggered using a list of sample phrases."""
 
         self.speak_dialog("how.are.you")
-        LOG.info(("There are five types of log messages: 'info, debug, warning, ")
-                 ("error, and exception."))
+        LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
         # Skills can log useful information. These will appear in the CLI and
         # in the skills.log file under ~/.mycroft/logs. LOG.info() is the most
         # common log level, but it is recommended to use the others when
@@ -92,9 +91,7 @@ class HelloWorldSkill(OVOSSkill):
         # LOG.exception() - Indicates an exception that causes the skill to crash
         #                  and is non-recoverable
         if self.log_level == "WARNING":
-            LOG.warning(("To be able to see debug logs, you need to change the")
-                        ("'log_level' setting to 'DEBUG' in the core ")
-                        ("configuration (mycroft.conf)"))
+            LOG.warning("To be able to see debug logs, you need to change the 'log_level' setting to 'DEBUG' in the core configuration (mycroft.conf)")
 
     @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
     def handle_hello_world_intent(self, message):
