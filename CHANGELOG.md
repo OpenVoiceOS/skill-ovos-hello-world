@@ -2,7 +2,19 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a6...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a7...HEAD)
+
+**Fixed bugs:**
+
+- "how are you" raised an error. [\#17](https://github.com/OpenVoiceOS/skill-ovos-hello-world/issues/17)
+
+**Merged pull requests:**
+
+- Delete .github/workflows/propose\_translation.yml [\#25](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/25) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.4a7](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/V0.0.4a7) (2024-06-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/V0.0.4a6...V0.0.4a7)
 
 **Fixed bugs:**
 
