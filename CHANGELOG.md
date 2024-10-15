@@ -7,6 +7,9 @@
 **Merged pull requests:**
 
 - fix:update\_requirements [\#28](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+- Add Catalan translation [\#27](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/27) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalan translation [\#26](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/26) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- added italian [\#24](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/24) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
