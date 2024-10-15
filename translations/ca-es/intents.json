@@ -1,7 +1,7 @@
 {
-    "/intent/HowAreYou.intent": [
-        "(Qu\u00e8 (fas|fem)|Com (va|va tot|est\u00e0s|anem))?",
-        "com ha anat",
-        "com ha provat el dia"
-    ]
+  "/intents/HowAreYou.intent": [
+    "com (estàs|ho portes)",
+    "com (va|prova) (tot|la cosa|)",
+    "com (va|prova) (el|es) dia"
+  ]
 }
