@@ -1,7 +1,7 @@
 {
   "/intents/HowAreYou.intent": [
     "hvordan går det med dig",
-    null,
-    null
+    "hvordan har du haft det",
+    "hvordan har din dag været"
   ]
 }
