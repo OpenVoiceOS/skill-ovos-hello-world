@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.7a1](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/0.1.7a1) (2024-10-31)
+## [0.1.8a1](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/0.1.8a1) (2024-11-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/0.1.6...0.1.7a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/0.1.7...0.1.8a1)
 
 **Merged pull requests:**
 
-- fix:allow workshop 3.0.0 [\#32](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/32) ([JarbasAl](https://github.com/JarbasAl))
+- Add Catalan translation [\#31](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/31) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
