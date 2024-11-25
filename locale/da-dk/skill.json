@@ -1,0 +1,13 @@
+{
+  "skill_id": "skill-ovos-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+  "description": "Introduktionsfærdighed, så færdighedsforfattere kan se, hvordan en OVOS-færdighed er sat sammen",
+  "examples": [
+    "Hej verden",
+    "Tak",
+    "Hvordan har du det?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}
