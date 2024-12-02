@@ -1,13 +1,26 @@
 # Changelog
 
-## [0.1.11a2](https://github.com/OpenVoiceOS/skill-ovos-hello-world/tree/0.1.11a2) (2024-11-25)
+## [0.1.11a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.11a3) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-hello-world/compare/0.1.10...0.1.11a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.11a2...0.1.11a3)
 
 **Merged pull requests:**
 
-- da-dk/translate [\#41](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/41) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add Catalan translation [\#40](https://github.com/OpenVoiceOS/skill-ovos-hello-world/pull/40) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/44) ([JarbasAl](https://github.com/JarbasAl))
+- de-de/translate [\#43](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/43) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [0.1.11a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.11a2) (2024-11-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.11a1...0.1.11a2)
+
+## [0.1.11a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.11a1) (2024-11-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.10...0.1.11a1)
+
+**Merged pull requests:**
+
+- da-dk/translate [\#41](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/41) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalan translation [\#40](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/40) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
