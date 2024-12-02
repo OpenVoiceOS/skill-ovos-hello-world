@@ -1,0 +1,10 @@
+{
+    "/vocab/HelloWorldKeyword.voc": [
+        "agurrak",
+        "Kaixo mundu"
+    ],
+    "/vocab/ThankYouKeyword.voc": [
+        "eskerrik asko",
+        "mila esker"
+    ]
+}
