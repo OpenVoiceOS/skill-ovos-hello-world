@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.11a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.11a4) (2024-12-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.11a3...0.1.11a4)
+
+**Merged pull requests:**
+
+- import galician and basque translations [\#45](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.11a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.11a3) (2024-12-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.11a2...0.1.11a3)
